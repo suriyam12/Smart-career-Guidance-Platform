@@ -1,0 +1,168 @@
+.role-selection-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.role-selection-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.role-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.role-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.role-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.role-option {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user-option {
+  border-color: #007bff;
+}
+
+.admin-option {
+  border-color: #e91e63;
+}
+
+.role-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.role-icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.role-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.role-info p {
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.role-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.role-info li {
+  padding: 8px 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.role-info li:last-child {
+  border-bottom: none;
+}
+
+.admin-warning {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.role-btn {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.user-btn {
+  background: #007bff;
+  color: white;
+}
+
+.user-btn:hover {
+  background: #0056b3;
+  color: white;
+  text-decoration: none;
+}
+
+.admin-btn {
+  background: #e91e63;
+  color: white;
+}
+
+.admin-btn:hover {
+  background: #ad1457;
+  color: white;
+  text-decoration: none;
+}
+
+.role-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .role-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .role-selection-card {
+    padding: 20px;
+  }
+  
+  .role-header h1 {
+    font-size: 2rem;
+  }
+}
